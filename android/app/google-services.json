@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "456120066267",
+    "project_id": "talk-to-me-1a0dd",
+    "storage_bucket": "talk-to-me-1a0dd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456120066267:android:f95b010a52af194b22ecfe",
+        "android_client_info": {
+          "package_name": "com.example.talk_to_me"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "456120066267-uhq7m735nvg20t622ohjvpdeiuvchav6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWSD5iPLTSLsVjD_AuVjONTPOa97F-p9Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "456120066267-uhq7m735nvg20t622ohjvpdeiuvchav6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
