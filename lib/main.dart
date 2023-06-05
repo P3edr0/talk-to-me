@@ -1,16 +1,23 @@
+import 'dart:developer';
+
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:talk_to_me/core/services/notifications/push_notification_service.dart';
+import 'package:talk_to_me/core/services/notifications/chat_notification_service.dart';
+import 'package:talk_to_me/firebase_options.dart';
 import 'package:talk_to_me/pages/auth_or_app_page.dart';
 
-import 'firebase_options.dart';
-
 void main() async {
+  FirebaseMessaging.onBackgroundMessage((message) async {
+    log("_messaging onBackgroundMessage: $message");
+  });
+
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
+
   runApp(const MyApp());
 }
 

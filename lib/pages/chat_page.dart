@@ -3,7 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:talk_to_me/components/messages.dart';
 import 'package:talk_to_me/components/new_message.dart';
 import 'package:talk_to_me/core/services/auth/auth_service.dart';
-import 'package:talk_to_me/core/services/notifications/push_notification_service.dart';
+import 'package:talk_to_me/core/services/notifications/chat_notification_service.dart';
 import 'package:talk_to_me/pages/notification_page.dart';
 
 class ChatPage extends StatelessWidget {
@@ -42,7 +42,7 @@ class ChatPage extends StatelessWidget {
               IconButton(
                   onPressed: (() => Navigator.of(context).push(
                       MaterialPageRoute(
-                          builder: ((context) => NotificationPage())))),
+                          builder: ((context) => const NotificationPage())))),
                   icon: const Icon(Icons.notifications)),
               Positioned(
                 top: 5,
@@ -65,7 +65,6 @@ class ChatPage extends StatelessWidget {
           children: const [Expanded(child: Messages()), NewMessage()],
         ),
       ),
-   
     );
   }
 }
